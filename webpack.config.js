@@ -1,53 +1,53 @@
 const CopyWebpackPlugin         = require('copy-webpack-plugin');
-const MiniCssExtractPlugin      = require("mini-css-extract-plugin");
+const MiniCssExtractPlugin      = require('mini-css-extract-plugin');
 const path                      = require('path');
 const StyleLintPlugin           = require('stylelint-webpack-plugin');
 const SpriteLoaderPlugin        = require('svg-sprite-loader/plugin');
 const MergeIntoSingleFilePlugin = require('webpack-merge-and-include-globally');
 
 module.exports = {
-    entry : [
-        path.join(__dirname, 'src', 'app.js') 
+    entry: [
+        path.join(__dirname, 'src', 'app.js'),
     ],
     output: {
         path    : path.resolve(__dirname, 'dist'),
         filename: 'bot.js',
     },
     devServer: {
-        publicPath: '/dist/',
+        publicPath      : '/dist/',
         disableHostCheck: true,
     },
     devtool: 'source-map',
-    target: 'web',
-    module: {
+    target : 'web',
+    module : {
         rules: [
             {
                 test: /\.(s*)css$/,
-                use: [
+                use : [
                     'css-hot-loader',
-                     MiniCssExtractPlugin.loader,
+                    MiniCssExtractPlugin.loader,
                     {
-                        loader: 'css-loader',
+                        loader : 'css-loader',
                         options: { sourceMap: true },
                     },
                     {
-                        loader: 'sass-loader',
+                        loader : 'sass-loader',
                         options: { sourceMap: true },
-                    }
-               ]
-            },  
-            {  
+                    },
+                ],
+            },
+            {
                 test: /\.svg$/,
-                use: [
+                use : [
                     {
-                        loader: 'svg-sprite-loader',
+                        loader : 'svg-sprite-loader',
                         options: {
-                            extract: true,
+                            extract       : true,
                             spriteFilename: 'bot-sprite.svg',
                         },
                     },
                     {
-                        loader: 'svgo-loader',
+                        loader : 'svgo-loader',
                         options: {
                             plugins: [
                                 { removeUselessStrokeAndFill: false },
@@ -58,12 +58,12 @@ module.exports = {
                 ],
             },
             {
-                enforce: "pre",
-                test: /\.(js|jsx)$/,
+                enforce: 'pre',
+                test   : /\.(js|jsx)$/,
                 exclude: [/node_modules/],
-                loader: "eslint-loader",
+                loader : 'eslint-loader',
                 options: {
-                    fix: true
+                    fix: true,
                 },
             },
             {
@@ -75,7 +75,7 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin({ filename: 'bot.css' }),
-        new StyleLintPlugin( { fix: true }),
+        new StyleLintPlugin({ fix: true }),
         new CopyWebpackPlugin([
             { from: './src/scratch/xml' },
             { from: './node_modules/scratch-blocks/media', to: 'media' },
@@ -86,8 +86,8 @@ module.exports = {
                     './node_modules/scratch-blocks/blockly_compressed_vertical.js',
                     './node_modules/scratch-blocks/msg/messages.js',
                     './node_modules/blockly/generators/javascript.js',
-                ]
-            }
+                ],
+            },
         }),
         new SpriteLoaderPlugin(),
     ],
