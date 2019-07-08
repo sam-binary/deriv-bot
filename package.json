@@ -94,6 +94,7 @@
     "react-data-grid": "^3.0.0",
     "react-dom": "^16.8.6",
     "react-joyride": "^1.11.1",
+    "react-modal": "^3.8.2",
     "redux": "^4.0.1",
     "redux-thunk": "^2.2.0",
     "sass-loader": "^7.1.0",
