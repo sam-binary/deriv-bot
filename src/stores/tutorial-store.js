@@ -14,7 +14,7 @@ export default class TutorialStore {
     };
 
     constructor() {
-        this.showAgain = localStorage.getItem('StarterHint') === 'true';
+        this.showAgain = localStorage.getItem('StarterHint') === 'true' || true;
         this.modalIsOpen = this.showAgain;
     }
 
