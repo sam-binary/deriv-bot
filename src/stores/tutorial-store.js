@@ -1,10 +1,10 @@
 import { observable, action, computed } from 'mobx';
 
 export default class TutorialStore {
-    @observable showAgain = true;
-    @observable modalIsOpen = true;
+    @observable show_again = true;
+    @observable modal_is_open = true;
     @observable strategy = 'martingale';
-    @observable tradeOptions = {
+    @observable trade_options = {
         market  : 'm1',
         contract: 'c1',
         stake   : 0,
@@ -14,61 +14,65 @@ export default class TutorialStore {
     };
 
     constructor() {
-        this.showAgain = localStorage.getItem('StarterHint') === 'true' || true;
-        this.modalIsOpen = this.showAgain;
+        const starter_hint = localStorage.getItem('StarterHint');
+        this.show_again = starter_hint === null ? true : starter_hint;
+        this.modal_is_open = this.show_again;
     }
 
-    changeStrategy = async () => {
+    updateStrategy = async () => {
         const workspace = Blockly.mainWorkspace;
         const strategy_xml = await fetch(`dist/${this.strategy}.xml`).then(response => response.text());
         const strategy_dom = Blockly.Xml.textToDom(strategy_xml);
 
-        const modifiedValueBlock = type => {
-            const valueBlock = strategy_dom.querySelectorAll(`value[id="${type}_value"]`)[0];
-            valueBlock.innerHTML = `<block type="math_number"><field name="NUM">${this.tradeOptions[type]}</field></block>`;
+        const modifiedValue = type => {
+            const value_block = strategy_dom.querySelector(`value[id="${type}_value"]`);
+
+            value_block.innerHTML = `<block type="math_number"><field name="NUM">${this.trade_options[type]}</field></block>`;
         };
 
-        const modifiedValue = (name, type) => {
-            const block = strategy_dom.querySelectorAll(`field[name="${name}"]`);
-            block[0].innerHTML = this.tradeOptions[type];
+        const modifiedDropdownValue = (name, type) => {
+            const block = strategy_dom.querySelector(`field[name="${name}"]`);
+
+            block.innerHTML = this.trade_options[type];
         };
 
-        modifiedValue('MARKET_LIST', 'market');
-        modifiedValue('TYPE_LIST', 'contract');
+        const dropdowns = {
+            MARKET_LIST: 'market',
+            TYPE_LIST  : 'contract',
+        };
+        const fields = ['stake', 'size', 'loss', 'profit'];
 
-        modifiedValueBlock('stake');
-        modifiedValueBlock('size');
-        modifiedValueBlock('loss');
-        modifiedValueBlock('profit');
+        Object.keys(dropdowns).forEach(key => modifiedDropdownValue(key, dropdowns[key]));
+        fields.forEach(field => modifiedValue(field));
 
         workspace.clear();
         Blockly.Xml.domToWorkspace(strategy_dom, workspace);
     }
 
     @computed
-    get tradeOptionValue() {
-        return this.tradeOptions;
+    get tradeOptionValues() {
+        return this.trade_options;
     }
 
     @computed
     get modalOpen() {
-        return this.modalIsOpen;
+        return this.modal_is_open;
     }
 
     @action.bound
     closeModal = () => {
-        this.modalIsOpen = !this.modalIsOpen;
+        this.modal_is_open = !this.modal_is_open;
     };
 
     @action.bound
     setTradeOption = (name, value) => {
-        this.tradeOptions[name] = value;
+        this.trade_options[name] = value;
     };
 
     @action.bound
-    setShowAgain = showAgain => {
-        this.showAgain = showAgain;
-        localStorage.setItem('StarterHint', !this.showAgain);
+    setShowAgain = show_again => {
+        this.show_again = show_again;
+        localStorage.setItem('StarterHint', this.show_again);
     }
 
     @action.bound
@@ -79,9 +83,9 @@ export default class TutorialStore {
     @action.bound
     handleSubmit = e => {
         e.preventDefault();
-        this.modalIsOpen = !this.modalIsOpen;
 
-        this.changeStrategy();
+        this.closeModal();
+        this.updateStrategy();
     };
 
 }

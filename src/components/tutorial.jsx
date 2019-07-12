@@ -18,20 +18,20 @@ Modal.setAppElement('#root');
 
 const Tutorial = ({
     setShowAgain,
-    modalOpen,
+    modal_is_open,
     strategy,
     setStrategy,
-    tradeOptions,
-    tradeOptionValue,
+    trade_options,
+    tradeOptionValues,
     closeModal,
     setTradeOption,
     handleSubmit,
 }) => {
-    const { market, contract, stake, size, loss, profit } = tradeOptions;
+    const { market, contract, stake, size, loss, profit } = trade_options;
 
     return (
         <Modal
-            isOpen={modalOpen}
+            isOpen={modal_is_open}
             contentLabel='Example Modal'
             shouldCloseOnOverlayClick={true}
             onRequestClose={closeModal}
@@ -47,23 +47,23 @@ const Tutorial = ({
                     <option value='dalembert'>D&apos;alembert</option>
                     <option value='oscars_grind'>Oscars Grind</option>
                 </select>
-                <select name='market' value={tradeOptionValue[market]} onChange={e => setTradeOption(e.target.name, e.target.value)}>
+                <select name='market' value={tradeOptionValues[market]} onChange={e => setTradeOption(e.target.name, e.target.value)}>
                     <option value='m1'>market 01</option>
                     <option value='m2'>market 02</option>
                     <option value='m3'>market 03</option>
                     <option value='m4'>market 04</option>
                 </select>
-                <select name='contract' value={tradeOptionValue[contract]} onChange={e => setTradeOption(e.target.name, e.target.value)}>
+                <select name='contract' value={tradeOptionValues[contract]} onChange={e => setTradeOption(e.target.name, e.target.value)}>
                     <option value='c1'>contract 01</option>
                     <option value='c2'>contract 02</option>
                     <option value='c3'>contract 03</option>
                     <option value='c4'>contract 04</option>
                 </select>
                 <br />
-                <input type='number' name='stake' value={tradeOptionValue[stake]} onChange={e => setTradeOption(e.target.name, e.target.value)} placeholder='stake' />
-                <input type='number' name='size' value={tradeOptionValue[size]} onChange={e => setTradeOption(e.target.name, e.target.value)} placeholder='size' />
-                <input type='number' name='loss' value={tradeOptionValue[loss]} onChange={e => setTradeOption(e.target.name, e.target.value)} placeholder='loss' />
-                <input type='number' name='profit' value={tradeOptionValue[profit]} onChange={e => setTradeOption(e.target.name, e.target.value)} placeholder='profit' />
+                <input type='number' name='stake' value={tradeOptionValues[stake]} onChange={e => setTradeOption(e.target.name, e.target.value)} placeholder='stake' />
+                <input type='number' name='size' value={tradeOptionValues[size]} onChange={e => setTradeOption(e.target.name, e.target.value)} placeholder='size' />
+                <input type='number' name='loss' value={tradeOptionValues[loss]} onChange={e => setTradeOption(e.target.name, e.target.value)} placeholder='loss' />
+                <input type='number' name='profit' value={tradeOptionValues[profit]} onChange={e => setTradeOption(e.target.name, e.target.value)} placeholder='profit' />
                 <br />
                 <input type='submit' value='OK' />
             </form>
@@ -73,15 +73,15 @@ const Tutorial = ({
 };
 
 const tutorial_component = connect(({ tutorial }) => ({
-    setShowAgain    : tutorial.setShowAgain,
-    strategy        : tutorial.strategy,
-    setStrategy     : tutorial.setStrategy,
-    tradeOptions    : tutorial.tradeOptions,
-    tradeOptionValue: tutorial.tradeOptionValue,
-    closeModal      : tutorial.closeModal,
-    modalOpen       : tutorial.modalOpen,
-    setTradeOption  : tutorial.setTradeOption,
-    handleSubmit    : tutorial.handleSubmit,
+    setShowAgain     : tutorial.setShowAgain,
+    strategy         : tutorial.strategy,
+    setStrategy      : tutorial.setStrategy,
+    trade_options    : tutorial.trade_options,
+    tradeOptionValues: tutorial.tradeOptionValues,
+    closeModal       : tutorial.closeModal,
+    modal_is_open    : tutorial.modal_is_open,
+    setTradeOption   : tutorial.setTradeOption,
+    handleSubmit     : tutorial.handleSubmit,
 }))(Tutorial);
 
 export { tutorial_component as Tutorial };

@@ -1,6 +1,7 @@
+
 import React            from 'react';
-import Workspace        from './workspace.jsx';
 import { Tutorial }     from './tutorial.jsx';
+import Workspace        from './workspace.jsx';
 import { connect }      from '../stores/connect';
 import                       '../assets/sass/_bot.scss';
 
