@@ -1,6 +1,7 @@
 @import '../base/mixins';
 
 $category-colours: (
+    search          : #afffda,
     trade-definition: #303f9f,
     before-purchase : #00897b,
     during-purchase : #78909c,
@@ -113,5 +114,12 @@ $category-colours: (
                 background-color: $category-colour;
             }
         }
+    }
+
+    #search_input {
+        padding: 10px;
+        border-radius: 5px;
+        border: solid $grey 1px;
+        margin: 3px;
     }
 }

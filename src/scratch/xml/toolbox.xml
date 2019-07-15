@@ -1,5 +1,6 @@
 <xml id="toolbox"
     xmlns="http://www.w3.org/1999/xhtml">
+    <category name="Search" id="search"></category>
     <category name="Trade Definition" i18n-text="Trade Definition" id="trade-definition">
         <block type="trade_definition">
             <statement name="TRADE_OPTIONS">
