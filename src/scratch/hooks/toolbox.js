@@ -142,9 +142,10 @@ Blockly.Toolbox.prototype.showCategory_ = function (category_id) {
                 }
             });
 
+            const block_category = block_definition && block_definition.category;
             const category =
                 this.categoryMenu_.categories_
-                    .find(menuCategory => menuCategory.id_ === block.definition().category);
+                    .find(menuCategory => menuCategory.id_ === block_category);
             const contents = category && category.getContents();
             search_term.forEach(term => {
                 if (keywords.toLowerCase().includes(term)) {
