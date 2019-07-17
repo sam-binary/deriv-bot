@@ -28,7 +28,7 @@ Blockly.Blocks.lists_indexOf = {
             colourSecondary: Blockly.Colours.Binary.colourSecondary,
             colourTertiary : Blockly.Colours.Binary.colourTertiary,
             tooltip        : translate('Index of List Tooltip'),
-            category       : 'list',
+            category       : Blockly.Categories.List,
         };
     },
     meta(){

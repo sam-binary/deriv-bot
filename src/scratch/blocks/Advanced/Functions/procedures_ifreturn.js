@@ -30,7 +30,7 @@ Blockly.Blocks.procedures_ifreturn = {
             previousStatement: null,
             nextStatement    : null,
             tooltip          : translate('Function If Else'),
-            category         : 'functions',
+            category         : Blockly.Categories.Functions,
         };
     },
     meta(){

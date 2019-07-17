@@ -35,7 +35,7 @@ Blockly.Blocks.after_purchase = {
             tooltip        : translate(
                 'Get the previous trade information and result, then trade again (Runs on trade finish)'
             ),
-            category: 'after-purchase',
+            category: Blockly.Categories.After_Purchase,
         };
     },
     meta(){

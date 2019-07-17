@@ -30,7 +30,7 @@ Blockly.Blocks.text_indexOf = {
             colourSecondary: Blockly.Colours.Binary.colourSecondary,
             colourTertiary : Blockly.Colours.Binary.colourTertiary,
             tooltip        : translate('Text Index of Tooltip'),
-            cateogry       : 'text',
+            cateogry       : Blockly.Categories.Text,
         };
     },
     meta(){

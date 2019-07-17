@@ -50,7 +50,7 @@ Blockly.Blocks.procedures_defreturn = {
             colourSecondary: Blockly.Colours.BinaryProcedures.colourSecondary,
             colourTertiary : Blockly.Colours.BinaryProcedures.colourTertiary,
             tooltip        : translate('Function def with return value'),
-            category       : translate('functions'),
+            category       : Blockly.Categories.Functions,
         };
     },
     meta(){

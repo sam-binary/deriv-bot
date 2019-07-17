@@ -21,7 +21,7 @@ Blockly.Blocks.variables_get = {
             colourSecondary: Blockly.Colours.Binary.colourSecondary,
             colourTertiary : Blockly.Colours.Binary.colourTertiary,
             tooltip        : translate('Get Variable Tooltip'),
-            category       : translate('variables'),
+            category       : Blockly.Categories.Variables,
         };
     },
     meta(){

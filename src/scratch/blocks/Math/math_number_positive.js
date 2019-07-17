@@ -1,26 +1,8 @@
 import { translate } from '../../../utils/lang/i18n';
 
 Blockly.Blocks.math_number_positive = {
-    init: Blockly.Blocks.math_number.init,
-    definition(){
-        return {
-            message0: '%1',
-            args0   : [
-                {
-                    type : 'field_number',
-                    name : 'NUM',
-                    value: 0,
-                },
-            ],
-            output         : 'Number',
-            outputShape    : Blockly.OUTPUT_SHAPE_ROUND,
-            colour         : '#dedede',
-            colourSecondary: '#ffffff',
-            colourTertiary : '#ffffff',
-            tooltip        : translate('Math Number Tooltip'),
-            category       : 'mathematical',
-        };
-    },
+    init      : Blockly.Blocks.math_number.init,
+    definition: Blockly.Blocks.math_number.definition,
     meta() {
         return {
             'display_name': translate('Math Number Positive'),
@@ -35,7 +17,4 @@ Blockly.Blocks.math_number_positive = {
     },
 };
 
-Blockly.JavaScript.math_number_positive = block => {
-    const code = block.getFieldValue('NUM');
-    return [code, Blockly.JavaScript.ORDER_ATOMIC];
-};
+Blockly.JavaScript.math_number_positive = Blockly.JavaScript.math_number;

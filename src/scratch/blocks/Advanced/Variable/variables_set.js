@@ -25,7 +25,7 @@ Blockly.Blocks.variables_set = {
             previousStatement: null,
             nextStatement    : null,
             tooltip          : translate('Set Variable Tooltip'),
-            category         : 'variables',
+            category         : Blockly.Categories.Variables,
         };
     },
     meta(){

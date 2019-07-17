@@ -21,6 +21,7 @@ Blockly.Blocks.block_holder = {
             colourSecondary: Blockly.Colours.Binary.colourSecondary,
             colourTertiary : Blockly.Colours.Binary.colourTertiary,
             tooltip        : translate('Put your blocks in here to prevent them from being removed'),
+            category       : Blockly.Categories.Miscellaneous,
         };
     },
     meta(){

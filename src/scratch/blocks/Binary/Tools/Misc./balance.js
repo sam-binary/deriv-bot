@@ -35,7 +35,7 @@ Blockly.Blocks.balance = {
             colourSecondary: Blockly.Colours.Binary.colourSecondary,
             colourTertiary : Blockly.Colours.Binary.colourTertiary,
             tooltip        : translate('Balance Tooltip'),
-            category       : 'miscellaneous',
+            category       : Blockly.Categories.Miscellaneous,
         };
     },
     meta(){

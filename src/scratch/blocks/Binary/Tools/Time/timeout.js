@@ -26,6 +26,7 @@ Blockly.Blocks.timeout = {
             previousStatement: null,
             nextStatement    : null,
             tooltip          : translate('Run the blocks inside every n seconds'),
+            category         : Blockly.Categories.Time,
         };
     },
     meta(){

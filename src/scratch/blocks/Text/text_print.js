@@ -19,7 +19,7 @@ Blockly.Blocks.text_print = {
             previousStatement: null,
             nextStatement    : null,
             tooltip          : translate('Text Print Tooltip'),
-            category         : 'text',
+            category         : Blockly.Categories.Text,
         };
     },
     meta(){

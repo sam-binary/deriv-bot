@@ -31,7 +31,7 @@ Blockly.Blocks.notify = {
             previousStatement: null,
             nextStatement    : null,
             tooltip          : translate('Creates a notification'),
-            cateogry         : translate('misc'),
+            cateogry         : Blockly.Categories.Miscellaneous,
         };
     },
     meta(){

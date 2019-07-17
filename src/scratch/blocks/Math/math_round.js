@@ -30,7 +30,7 @@ Blockly.Blocks.math_round = {
             colourSecondary: Blockly.Colours.Binary.colourSecondary,
             colourTertiary : Blockly.Colours.Binary.colourTertiary,
             tooltip        : translate('Math Round Tooltip'),
-            category       : 'mathematical',
+            category       : Blockly.Categories.Mathematical,
         };
     },
     meta(){

@@ -25,7 +25,7 @@ Blockly.Blocks.ohlc_values_in_list = {
             colourSecondary: Blockly.Colours.Binary.colourSecondary,
             colourTertiary : Blockly.Colours.Binary.colourTertiary,
             tooltip        : translate('Returns a list of the selected candle values'),
-            category       : translate('candle'),
+            category       : Blockly.Categories.Candle,
         };
     },
     meta(){

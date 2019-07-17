@@ -39,7 +39,7 @@ Blockly.Blocks.text_prompt_ext = {
             colourSecondary: Blockly.Colours.Binary.colourSecondary,
             colourTertiary : Blockly.Colours.Binary.colourTertiary,
             tooltip        : translate('Text Prompt Tooltip'),
-            category       : translate('text'),
+            category       : Blockly.Categories.Text,
         };
     },
     meta(){

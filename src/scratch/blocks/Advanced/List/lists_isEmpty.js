@@ -20,7 +20,7 @@ Blockly.Blocks.lists_isEmpty = {
             colourSecondary: Blockly.Colours.Binary.colourSecondary,
             colourTertiary : Blockly.Colours.Binary.colourTertiary,
             tooltip        : translate('List is Empty Tooltip'),
-            category       : 'list',
+            category       : Blockly.Categories.List,
         };
     },
     meta(){

@@ -39,7 +39,7 @@ Blockly.Blocks.math_number_property = {
             colourSecondary: Blockly.Colours.Binary.colourSecondary,
             colourTertiary : Blockly.Colours.Binary.colourTertiary,
             toolip         : translate('Math Number Tooltip'),
-            category       : 'mathematical',
+            category       : Blockly.Categories.Mathematical,
         };
     },
     meta(){

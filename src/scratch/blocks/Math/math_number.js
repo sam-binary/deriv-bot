@@ -23,7 +23,7 @@ Blockly.Blocks.math_number = {
             colourSecondary: '#ffffff',
             colourTertiary : '#ffffff',
             tooltip        : translate('Math Number Tooltip'),
-            category       : 'mathematical',
+            category       : Blockly.Categories.Mathematical,
         };
     },
     meta(){

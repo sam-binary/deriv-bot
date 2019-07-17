@@ -25,6 +25,7 @@ Blockly.Blocks.read_ohlc_obj = {
             colourSecondary: Blockly.Colours.Binary.colourSecondary,
             colourTertiary : Blockly.Colours.Binary.colourTertiary,
             tooltip        : translate('Read a field in a candle (read from the Candles list)'),
+            category       : Blockly.Categories.Candle,
         };
     },
     meta(){

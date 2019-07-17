@@ -36,7 +36,7 @@ Blockly.Blocks.math_change = {
             previousStatement: null,
             nextStatement    : null,
             tooltip          : translate('Change Number variable'),
-            category         : 'mathematical',
+            category         : Blockly.Categories.Mathematical,
         };
     },
     /**

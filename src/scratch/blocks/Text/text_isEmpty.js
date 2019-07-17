@@ -20,7 +20,7 @@ Blockly.Blocks.text_isEmpty = {
             colourSecondary: Blockly.Colours.Binary.colourSecondary,
             colourTertiary : Blockly.Colours.Binary.colourTertiary,
             tooltip        : translate('Text Is empty'),
-            category       : 'text',
+            category       : Blockly.Categories.Text,
         };
     },
     meta(){

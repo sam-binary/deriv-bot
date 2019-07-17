@@ -21,7 +21,7 @@ Blockly.Blocks.contract_check_result = {
             colourSecondary: Blockly.Colours.Binary.colourSecondary,
             colourTertiary : Blockly.Colours.Binary.colourTertiary,
             tooltip        : translate('True if the result matches the selection'),
-            category       : translate('after-purchase'),
+            category       : Blockly.Categories.After_Purchase,
         };
     },
     meta(){

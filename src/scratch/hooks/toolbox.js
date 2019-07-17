@@ -155,11 +155,11 @@ Blockly.Toolbox.prototype.showCategory_ = function (category_id) {
                         flyout_content.var_blocks.blocks_type.push(blockKey);
                         flyout_content.var_blocks.blocks = all_variables;
                     } else if (contents instanceof Array) {
-                        const filteredContents = contents
+                        const blockContents = contents
                             .filter(content => content.attributes[0].nodeValue === blockKey);
 
-                        if (flyout_content.blocks.indexOf(filteredContents[0]) === -1) {
-                            flyout_content.blocks.push(filteredContents[0]);
+                        if (blockContents.length && flyout_content.blocks.indexOf(blockContents[0]) === -1) {
+                            flyout_content.blocks.push(blockContents[0]);
                         }
                     }
                 }

@@ -26,7 +26,7 @@ Blockly.Blocks.procedures_callreturn = {
             colourSecondary: Blockly.Colours.BinaryProcedures.colourSecondary,
             colourTertiary : Blockly.Colours.BinaryProcedures.colourTertiary,
             tooltip        : translate('Function with return value'),
-            category       : translate('functions'),
+            category       : Blockly.Categories.Functions,
         };
     },
     meta(){

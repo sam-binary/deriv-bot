@@ -35,7 +35,7 @@ Blockly.Blocks.procedures_callnoreturn = {
             previousStatement: null,
             nextStatement    : null,
             tooltip          : translate('Function with no return value tooltip'),
-            category         : 'functions',
+            category         : Blockly.Categories.Functions,
         };
     },
     /**

@@ -13,7 +13,7 @@ Blockly.Blocks.math_random_float = {
             colourSecondary: Blockly.Colours.Binary.colourSecondary,
             colourTertiary : Blockly.Colours.Binary.colourTertiary,
             tooltip        : translate('Math Random Float Tooltip'),
-            category       : 'mathematical',
+            category       : Blockly.Categories.Mathematical,
         };
     },
     meta(){

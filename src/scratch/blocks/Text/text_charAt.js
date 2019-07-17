@@ -43,7 +43,7 @@ Blockly.Blocks.text_charAt = {
             colourSecondary: Blockly.Colours.Binary.colourSecondary,
             colourTertiary : Blockly.Colours.Binary.colourTertiary,
             tooltip        : translate('Text Char At Tooltip'),
-            category       : 'text',
+            category       : Blockly.Categories.Text,
         };
     },
     meta(){

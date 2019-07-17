@@ -22,7 +22,7 @@ Blockly.Blocks.is_candle_black = {
             tooltip        : translate(
                 'Checks if the given candle is black, returns true if close is less than open in the given candle.'
             ),
-            category: 'candle',
+            category: Blockly.Categories.Candle,
         };
     },
     meta(){

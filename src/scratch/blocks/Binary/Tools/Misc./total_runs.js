@@ -13,6 +13,7 @@ Blockly.Blocks.total_runs = {
             colourSecondary: Blockly.Colours.Binary.colourSecondary,
             colourTertiary : Blockly.Colours.Binary.colourTertiary,
             tooltip        : translate('Returns the number of runs since the beginning'),
+            category       : Blockly.Categories.Miscellaneous,
         };
     },
     meta(){

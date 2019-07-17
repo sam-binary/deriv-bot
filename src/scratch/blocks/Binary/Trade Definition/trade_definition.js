@@ -60,7 +60,7 @@ Blockly.Blocks.trade_definition = {
             colourSecondary: Blockly.Colours.Binary.colourSecondary,
             colourTertiary : Blockly.Colours.Binary.colourTertiary,
             tooltip        : translate('Trade Definition tooltip'),
-            category       : translate('trade-definition'),
+            category       : Blockly.Categories.Trade_Definition,
         };
     },
     meta() {

@@ -21,7 +21,7 @@ Blockly.Blocks.payout = {
             colourSecondary: Blockly.Colours.Binary.colourSecondary,
             colourTertiary : Blockly.Colours.Binary.colourTertiary,
             tooltip        : translate('Payout for selected proposal'),
-            category       : translate('before-purchase'),
+            category       : Blockly.Categories.Before_Purchase,
         };
     },
     meta(){

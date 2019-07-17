@@ -38,7 +38,7 @@ Blockly.Blocks.procedures_defnoreturn = {
             colourSecondary: Blockly.Colours.BinaryProcedures.colourSecondary,
             colourTertiary : Blockly.Colours.BinaryProcedures.colourTertiary,
             tooltip        : translate('function with no return tooltip'),
-            category       : translate('functions'),
+            category       : Blockly.Categories.Functions,
         };
     },
     meta() {

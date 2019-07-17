@@ -28,7 +28,7 @@ Blockly.Blocks.text_trim = {
             colourSecondary: Blockly.Colours.Binary.colourSecondary,
             colourTertiary : Blockly.Colours.Binary.colourTertiary,
             tooltip        : translate('Text Trim Tooltip'),
-            category       : 'text',
+            category       : Blockly.Categories.Text,
         };
     },
     meta(){

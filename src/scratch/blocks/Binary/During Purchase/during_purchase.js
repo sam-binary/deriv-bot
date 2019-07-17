@@ -35,7 +35,7 @@ Blockly.Blocks.during_purchase = {
             tooltip        : translate(
                 'Watch the purchased contract info and sell at market if available (Runs on contract update)'
             ),
-            category: 'during-purchase',
+            category: Blockly.Categories.During_Purchase,
         };
     },
     meta(){

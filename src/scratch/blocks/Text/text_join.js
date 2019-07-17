@@ -33,7 +33,7 @@ Blockly.Blocks.text_join = {
             previousStatement: null,
             nextStatement    : null,
             tooltip          : translate('Text Join Tooltip'),
-            category         : 'text',
+            category         : Blockly.Categories.Text,
         };
     },
     meta(){

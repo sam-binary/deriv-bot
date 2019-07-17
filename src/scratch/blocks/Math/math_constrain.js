@@ -30,7 +30,7 @@ Blockly.Blocks.math_constrain = {
             colourSecondary: Blockly.Colours.Binary.colourSecondary,
             colourTertiary : Blockly.Colours.Binary.colourTertiary,
             tooltip        : translate('Math Constrain Tooltip'),
-            category       : 'mathematical',
+            category       : Blockly.Categories.Mathematical,
         };
     },
     meta(){

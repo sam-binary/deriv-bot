@@ -32,7 +32,7 @@ Blockly.Blocks.controls_forEach = {
             previousStatement: null,
             nextStatement    : null,
             tooltip          : translate('Control Foreach Tooltip'),
-            category         : 'loop',
+            category         : Blockly.Categories.Loop,
         };
     },
     meta(){

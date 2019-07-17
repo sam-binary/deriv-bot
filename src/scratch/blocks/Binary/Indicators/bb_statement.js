@@ -38,7 +38,7 @@ Blockly.Blocks.bb_statement = {
             tooltip          : translate('Calculates Bollinger Bands (BB) from a list with a period'),
             previousStatement: null,
             nextStatement    : null,
-            category         : 'indicators',
+            category         : Blockly.Categories.Indicators,
         };
     },
     meta(){

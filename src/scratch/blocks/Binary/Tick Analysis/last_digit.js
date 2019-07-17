@@ -13,7 +13,7 @@ Blockly.Blocks.last_digit = {
             colourSecondary: Blockly.Colours.Binary.colourSecondary,
             colourTertiary : Blockly.Colours.Binary.colourTertiary,
             tooltip        : translate('Returns the last digit of the latest tick'),
-            category       : translate('tick-analysis'),
+            category       : Blockly.Categories.Tick_Analysis,
         };
     },
     meta(){

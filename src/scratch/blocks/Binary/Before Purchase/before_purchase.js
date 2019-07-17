@@ -33,7 +33,7 @@ Blockly.Blocks.before_purchase = {
             colourSecondary: Blockly.Colours.Binary.colourSecondary,
             colourTertiary : Blockly.Colours.Binary.colourTertiary,
             tooltip        : translate('Watch the tick stream and purchase the desired contract (Runs on tick update)'),
-            category       : translate('before-purchase'),
+            category       : Blockly.Categories.Before_Purchase,
         };
     },
     meta(){

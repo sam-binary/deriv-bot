@@ -20,7 +20,7 @@ Blockly.Blocks.logic_boolean = {
             colourSecondary: Blockly.Colours.Binary.colourSecondary,
             colourTertiary : Blockly.Colours.Binary.colourTertiary,
             tooltip        : translate('Logic Boolean Tooltip'),
-            category       : 'logic',
+            category       : Blockly.Categories.Logic,
         };
     },
     meta(){

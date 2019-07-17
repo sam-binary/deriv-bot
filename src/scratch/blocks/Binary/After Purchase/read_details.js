@@ -20,7 +20,7 @@ Blockly.Blocks.read_details = {
             colourSecondary: Blockly.Colours.Binary.colourSecondary,
             colourTertiary : Blockly.Colours.Binary.colourTertiary,
             tooltip        : translate('Reads a selected option from contract details list'),
-            category       : translate('after-purchase'),
+            category       : Blockly.Categories.After_Purchase,
         };
     },
     meta(){

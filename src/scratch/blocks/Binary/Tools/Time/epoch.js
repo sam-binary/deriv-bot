@@ -13,7 +13,7 @@ Blockly.Blocks.epoch = {
             colourSecondary: Blockly.Colours.Binary.colourSecondary,
             colourTertiary : Blockly.Colours.Binary.colourTertiary,
             tooltip        : translate('Returns the epoch time (seconds since epoch)'),
-            category       : translate('time'),
+            category       : Blockly.Categories.Time,
         };
     },
     meta(){

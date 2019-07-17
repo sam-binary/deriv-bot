@@ -30,7 +30,7 @@ Blockly.Blocks.math_arithmetic = {
             colourSecondary: Blockly.Colours.Binary.colourSecondary,
             colourTertiary : Blockly.Colours.Binary.colourTertiary,
             tooltip        : translate('Mathematic Arithmetic (Add, minus, mutiply, divide, power)'),
-            category       : translate('mathematical'),
+            category       : Blockly.Categories.Mathematical,
         };
     },
     meta(){

@@ -19,7 +19,7 @@ Blockly.Blocks.lists_length = {
             colourSecondary: Blockly.Colours.Binary.colourSecondary,
             colourTertiary : Blockly.Colours.Binary.colourTertiary,
             tooltip        : translate('List Length Tooltip'),
-            category       : 'list',
+            category       : Blockly.Categories.List,
         };
     },
     meta(){

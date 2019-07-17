@@ -28,7 +28,7 @@ Blockly.Blocks.lists_repeat = {
             previousStatement: null,
             nextStatement    : null,
             tooltip          : translate('List Repeat Tooltip'),
-            category         : 'list',
+            category         : Blockly.Categories.List,
         };
     },
     meta(){

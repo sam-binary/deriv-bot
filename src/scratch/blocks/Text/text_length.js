@@ -19,7 +19,7 @@ Blockly.Blocks.text_length = {
             colourSecondary: Blockly.Colours.Binary.colourSecondary,
             colourTertiary : Blockly.Colours.Binary.colourTertiary,
             tooltip        : translate('Text Length Tooltip'),
-            category       : 'text',
+            category       : Blockly.Categories.Text,
         };
     },
     meta(){

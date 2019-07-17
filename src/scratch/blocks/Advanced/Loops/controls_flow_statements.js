@@ -23,7 +23,7 @@ Blockly.Blocks.controls_flow_statements = {
             previousStatement: null,
             nextStatement    : null,
             tooltip          : translate('Control Statement Tooltip'),
-            category         : 'loop',
+            category         : Blockly.Categories.Loop,
         };
     },
     meta(){

@@ -15,7 +15,7 @@ Blockly.Blocks.trade_again = {
             colourTertiary   : Blockly.Colours.Binary.colourTertiary,
             previousStatement: null,
             tooltip          : translate('Runs the trade block again'),
-            category         : 'after-purchase',
+            category         : Blockly.Categories.After_Purchase,
         };
     },
     meta(){

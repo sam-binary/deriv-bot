@@ -19,7 +19,7 @@ Blockly.Blocks.logic_negate = {
             colourSecondary: Blockly.Colours.Binary.colourSecondary,
             colourTertiary : Blockly.Colours.Binary.colourTertiary,
             tooltip        : translate('Logic Negate Tooltip'),
-            category       : 'logic',
+            category       : Blockly.Categories.Logic,
         };
     },
     meta(){

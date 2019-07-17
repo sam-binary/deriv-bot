@@ -21,7 +21,7 @@ Blockly.Blocks.ask_price = {
             colourSecondary: Blockly.Colours.Binary.colourSecondary,
             colourTertiary : Blockly.Colours.Binary.colourTertiary,
             tooltip        : translate('Ask Price for selected proposal'),
-            category       : translate('before-purchase'),
+            category       : Blockly.Categories.Before_Purchase,
         };
     },
     meta(){

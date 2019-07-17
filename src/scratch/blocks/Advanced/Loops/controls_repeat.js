@@ -30,7 +30,7 @@ Blockly.Blocks.controls_repeat = {
             previousStatement: null,
             nextStatement    : null,
             tooltip          : translate('Control Repeat Tooltip'),
-            category         : 'loop',
+            category         : Blockly.Categories.Loop,
         };
     },
     meta(){

@@ -26,7 +26,7 @@ Blockly.Blocks.lists_statement = {
             previousStatement: null,
             nextStatement    : null,
             tooltip          : translate('List Statement Tooltip'),
-            category         : 'list',
+            category         : Blockly.Categories.List,
         };
     },
     meta(){

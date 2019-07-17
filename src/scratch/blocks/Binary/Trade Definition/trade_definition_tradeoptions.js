@@ -43,7 +43,7 @@ Blockly.Blocks.trade_definition_tradeoptions = {
             previousStatement: null,
             nextStatement    : null,
             tooltip          : translate('Trade Options Tooltip'),
-            category         : 'trade-definition',
+            category         : Blockly.Categories.Trade_Definition,
         };
     },
     meta(){

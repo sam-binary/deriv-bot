@@ -19,7 +19,7 @@ Blockly.Blocks.text = {
             colourSecondary: '#ffffff',
             colourTertiary : '#ffffff',
             tooltip        : translate('Text Tooltip'),
-            category       : 'text',
+            category       : Blockly.Categories.Text,
         };
     },
     meta(){

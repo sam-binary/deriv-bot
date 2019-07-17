@@ -24,7 +24,7 @@ Blockly.Blocks.text_append = {
             previousStatement: null,
             nextStatement    : null,
             tooltip          : translate('Text Append Tooltip'),
-            category         : 'text',
+            category         : Blockly.Categories.Text,
         };
     },
     meta(){

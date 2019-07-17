@@ -42,7 +42,7 @@ Blockly.Blocks.controls_for = {
             previousStatement: null,
             nextStatement    : null,
             tooltip          : translate('Control For Tooltip'),
-            category         : 'loop',
+            category         : Blockly.Categories.Loop,
         };
     },
     meta(){

@@ -33,7 +33,7 @@ Blockly.Blocks.lists_create_with = {
             previousStatement: null,
             nextStatement    : null,
             tooltip          : translate('Create List with'),
-            category         : 'list',
+            category         : Blockly.Categories.List,
         };
     },
     meta(){

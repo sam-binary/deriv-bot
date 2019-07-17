@@ -28,6 +28,7 @@ Blockly.Blocks.loader = {
             colourSecondary: Blockly.Colours.Binary.colourSecondary,
             colourTertiary : Blockly.Colours.Binary.colourTertiary,
             tooltip        : translate('Load blocks from URL'),
+            category       : Blockly.Categories.Miscellaneous,
         };
     }, meta(){
         return {

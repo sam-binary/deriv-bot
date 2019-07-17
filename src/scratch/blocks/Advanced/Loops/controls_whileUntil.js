@@ -32,7 +32,7 @@ Blockly.Blocks.controls_whileUntil = {
             previousStatement: null,
             nextStatement    : null,
             tooltip          : translate('Control While Tooltip'),
-            category         : 'loop',
+            category         : Blockly.Categories.Loop,
         };
     },
     meta(){

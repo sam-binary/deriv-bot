@@ -38,7 +38,7 @@ Blockly.Blocks.controls_if = {
             previousStatement: null,
             nextStatement    : null,
             tooltip          : translate('If else statement tooltip'),
-            category         : 'logic',
+            category         : Blockly.Categories.Logic,
         };
     },
     meta(){
